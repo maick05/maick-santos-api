@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { PostEntity } from 'src/domain/entity/post.entity';
+import { PostEntity } from '../../domain/entity/post.entity';
 
 @Injectable()
 export class PostRepository implements PostRepository {
