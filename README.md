@@ -44,8 +44,7 @@ $ npm run test:cov
 
 -   Deploy Link URL from stackblitz: https://stackblitz.com/edit/node-ghw2sq
 -   Publish Deploy URL: https://node-ghw2sq--3000.local.webcontainer.io/
--   Publish URL: http://scalio-test.devseeder.com/
--   Coverage: http://scalio-test.devseeder.com/coverage/lcov-report/index.html
+-   Coverage URL: http://devseeder.com/maick-santos-api/coverage/lcov-report/index.html
 -   Back-end Endpoints:
     -   Get Post By Id (Example): https://node-ghw2sq--3000.local.webcontainer.io/posts/1
     -   Get All Posts: https://node-ghw2sq--3000.local.webcontainer.io/posts
