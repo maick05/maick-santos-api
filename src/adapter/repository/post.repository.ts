@@ -64,12 +64,6 @@ export class PostRepository implements PostRepository {
                 id: 10,
                 title: 'optio molestias id quia eum',
                 body: 'quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error'
-            },
-            {
-                userId: 1,
-                id: 11,
-                title: 'teste',
-                body: 'quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error'
             }
         ];
     }
