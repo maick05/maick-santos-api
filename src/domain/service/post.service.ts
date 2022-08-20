@@ -35,7 +35,7 @@ export class PostService {
     validateField(field: string, output) {
         if (!Object.keys(output).includes(field)) {
             throw new BadRequestException(
-                `The requested Post doesn't have the property ${field}`
+                `The requested Post doesn't have the ${field} property`
             );
         }
 

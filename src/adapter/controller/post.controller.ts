@@ -7,7 +7,7 @@ export class PostController {
     constructor(private readonly postService: PostService) {}
 
     @Get('/:id')
-    getPost(@Param('id') id: number): PostEntity {
+    getPostById(@Param('id') id: number): PostEntity {
         return this.postService.getPostById(id);
     }
 }
