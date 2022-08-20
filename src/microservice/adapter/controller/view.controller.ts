@@ -2,11 +2,11 @@ import { Controller, Get, Param, Render } from '@nestjs/common';
 import { PostEntity } from '../../domain/entity/post.entity';
 import { PostService } from '../../domain/service/post.service';
 
-@Controller('view')
+@Controller()
 export class ViewController {
     constructor(private readonly postService: PostService) {}
 
-    @Get()
+    @Get('/')
     @Render('index')
     root(): any {
         return {};

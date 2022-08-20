@@ -40,12 +40,14 @@ $ npm run test:cov
 
 ## Usage
 
--   Publish URL: https://node-ghw2sq--3000.local.webcontainer.io/view
+-   Deploy Link URL from stackblitz: https://stackblitz.com/edit/node-ghw2sq
+-   Publish Deploy URL: https://node-ghw2sq--3000.local.webcontainer.io/
+-   Publish URL: http://scalio-test.devseeder.com/
 -   Back-end Endpoints:
     -   Get Post By Id (Example): https://node-ghw2sq--3000.local.webcontainer.io/posts/1
     -   Get All Posts: https://node-ghw2sq--3000.local.webcontainer.io/posts
 -   Front-End Home page:
-    -   https://node-ghw2sq--3000.local.webcontainer.io/view
+    -   https://node-ghw2sq--3000.local.webcontainer.io/
 
 ## Post Data
 
