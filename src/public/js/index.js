@@ -54,6 +54,8 @@ function runWaitMe(effect) {
         fontSize: '',
 
         // callback
-        onClose: function () {}
+        onClose: function () {
+            return;
+        }
     });
 }
