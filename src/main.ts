@@ -1,5 +1,5 @@
 import { NestFactory } from '@nestjs/core';
-import { PostModule } from './adapter/post.module';
+import { PostModule } from './microservice/adapter/post.module';
 
 async function bootstrap() {
     const app = await NestFactory.create(PostModule);

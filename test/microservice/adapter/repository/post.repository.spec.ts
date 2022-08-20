@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { PostRepository } from '../../../src/adapter/repository/post.repository';
+import { PostRepository } from '../../../../src/microservice/adapter/repository/post.repository';
 
 describe('PostRepository', () => {
     let postRepository: PostRepository;

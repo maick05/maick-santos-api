@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication } from '@nestjs/common';
 import * as request from 'supertest';
-import { PostModule } from '../src/adapter/post.module';
+import { PostModule } from '../src/microservice/adapter/post.module';
 
 describe('PostController (e2e)', () => {
     let app: INestApplication;

@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { PostController } from '../../src/adapter/controller/post.controller';
-import { PostModule } from '../../src/adapter/post.module';
+import { PostController } from '../../../src/microservice/adapter/controller/post.controller';
+import { PostModule } from '../../../src/microservice/adapter/post.module';
 
 describe('PostController', () => {
     let postController: PostController;
