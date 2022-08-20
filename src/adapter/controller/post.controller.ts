@@ -10,4 +10,9 @@ export class PostController {
     getPostById(@Param('id') id: number): PostEntity {
         return this.postService.getPostById(id);
     }
+
+    @Get('/')
+    getPost(): PostEntity[] {
+        return this.postService.getPosts();
+    }
 }

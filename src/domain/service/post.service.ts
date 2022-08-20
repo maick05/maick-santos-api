@@ -13,13 +13,17 @@ export class PostService {
     constructor(private readonly postRepository: PostRepository) {}
 
     getPostById(id: number): PostEntity {
-        const postById = this.postRepository.getPosts().filter((post) => {
+        const postById = this.getPosts().filter((post) => {
             return post.id == id;
         });
 
         this.validateOutput(id, postById);
 
         return postById[0];
+    }
+
+    getPosts(): PostEntity[] {
+        return this.postRepository.getPosts();
     }
 
     validateOutput(id: number, output: PostEntity[]) {
