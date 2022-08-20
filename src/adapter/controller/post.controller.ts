@@ -12,7 +12,7 @@ export class PostController {
     }
 
     @Get('/')
-    getPost(): PostEntity[] {
+    getPosts(): PostEntity[] {
         return this.postService.getPosts();
     }
 }

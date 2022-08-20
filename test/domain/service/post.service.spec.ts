@@ -264,4 +264,18 @@ describe('PostService', () => {
             postServiceStub.restore();
         });
     });
+
+    describe('getPosts', () => {
+        it('Should call getPosts and return the correct array of posts', () => {
+            const postServiceStub = sinon
+                .stub(mockPostRepository, 'getPosts')
+                .returns(mockPosts);
+
+            const actual = postService.getPosts();
+
+            expect(JSON.stringify(actual)).toBe(JSON.stringify(mockPosts));
+
+            postServiceStub.restore();
+        });
+    });
 });
