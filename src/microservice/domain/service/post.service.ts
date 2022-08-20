@@ -5,9 +5,10 @@ import {
 } from '@nestjs/common';
 import { PostRepository } from '../../adapter/repository/post.repository';
 import { PostEntity } from '../entity/post.entity';
+import { IPostService } from '../interface/post.service.interface';
 
 @Injectable()
-export class PostService {
+export class PostService implements IPostService {
     private validationFields = ['title', 'body'];
 
     constructor(private readonly postRepository: PostRepository) {}
@@ -26,7 +27,7 @@ export class PostService {
         return this.postRepository.getPosts();
     }
 
-    validateOutput(id: number, output: PostEntity[]) {
+    private validateOutput(id: number, output: PostEntity[]) {
         if (output.length === 0) {
             throw new NotFoundException(`Post ${id} not found!`);
         }
@@ -36,7 +37,7 @@ export class PostService {
         });
     }
 
-    validateField(field: string, output) {
+    private validateField(field: string, output) {
         if (!Object.keys(output).includes(field)) {
             throw new BadRequestException(
                 `The requested Post doesn't have the ${field} property`
