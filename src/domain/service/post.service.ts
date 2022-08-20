@@ -3,7 +3,7 @@ import {
     Injectable,
     NotFoundException
 } from '@nestjs/common';
-import { PostRepository } from 'src/adapter/repository/post.repository';
+import { PostRepository } from '../../adapter/repository/post.repository';
 import { PostEntity } from '../entity/post.entity';
 
 @Injectable()
@@ -39,7 +39,13 @@ export class PostService {
             );
         }
 
-        if (output[field].length === 0 || output[field].length == null) {
+        if (typeof output[field] === 'undefined') {
+            throw new BadRequestException(
+                `Undefined ${field} for requested Post`
+            );
+        }
+
+        if (output[field] == null || output[field].length === 0) {
             throw new BadRequestException(`Empty ${field} for requested Post`);
         }
     }
