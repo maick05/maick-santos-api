@@ -14,6 +14,7 @@ $(document).ready(function () {
         }).fail(function (xhr) {
             const responseErr = JSON.parse(xhr.responseText);
             runWaitMe('hide');
+            $('#send').removeClass('waitMe_container');
             alert(`Error getting the post details: ${responseErr.message}`);
         });
     });
