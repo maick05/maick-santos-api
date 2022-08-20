@@ -1,5 +1,5 @@
 import { Controller, Get, Param, Render } from '@nestjs/common';
-import { PostEntity } from 'src/microservice/domain/entity/post.entity';
+import { PostEntity } from '../../domain/entity/post.entity';
 import { PostService } from '../../domain/service/post.service';
 
 @Controller('view')
@@ -14,7 +14,7 @@ export class ViewController {
 
     @Get('/post/:id')
     @Render('post')
-    postDetails(@Param('id') id: number): PostEntity {
+    getPostDetails(@Param('id') id: number): PostEntity {
         return this.postService.getPostById(id);
     }
 }

@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { PostRepository } from '../../../src/microservice/adapter/repository/post.repository';
-import { PostService } from '../../../src/domain/service/post.service';
+import { PostRepository } from '../../../../src/microservice/adapter/repository/post.repository';
+import { PostService } from '../../../../src/microservice/domain/service/post.service';
 import * as sinon from 'sinon';
 
 describe('PostService', () => {

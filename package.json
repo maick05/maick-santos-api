@@ -69,7 +69,9 @@
     "coverageDirectory": "coverage",
     "coveragePathIgnorePatterns": [
       "/node_modules/",
-      "/src/main.ts"
+      "/src/main.ts",
+      "/src/microservice/app.module.ts",
+      "/public/"
     ],
     "testEnvironment": "node"
   }

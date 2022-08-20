@@ -1,4 +1,4 @@
-import { PostEntity } from '../../../src/domain/entity/post.entity';
+import { PostEntity } from '../../../../src/microservice/domain/entity/post.entity';
 
 describe('PostEntity', () => {
     it('Should instanciate PostEntity Correctly', () => {
