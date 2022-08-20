@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
-import { ViewController } from './adapter/controller/view.controller';
 import { PostModule } from './adapter/post.module';
+import { ViewModule } from './adapter/view.module';
 
 @Module({
-    imports: [PostModule],
-    controllers: [ViewController],
+    imports: [PostModule, ViewModule],
+    controllers: [],
     providers: []
 })
 export class AppModule {}

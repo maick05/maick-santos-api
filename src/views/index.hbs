@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
     <meta charset="utf-8" />
     <title>App</title>
+</style>
   </head>
   <body>
-    Olá mundp
+<div class="container" bis_skin_checked="1">
+      <div class="py-5 text-center" bis_skin_checked="1">
+        <img class="d-block mx-auto mb-4" src="images/scalio.jpg" alt="" width="72" height="72">
+        <h2>POST API (Scalio Test)</h2>
+        <p class="lead">Inform the ID of Post and get his information</p>
+      </div>
+        <div class="col-md-12 order-md-1" bis_skin_checked="1">
+          <form class="needs-validation" novalidate="">
+            <div class="row" bis_skin_checked="1">
+              <div class="col-md-3 mb-3" bis_skin_checked="1">
+                <label for="postId">Post ID</label>
+                <input type="number" class="form-control" id="postId" placeholder="" value="" required="">
+                <div class="invalid-feedback" bis_skin_checked="1">
+                  Post ID is required.
+                </div>
+              </div>
+
+            </div>
+            <hr class="mb-4">
+            <button id="send" style="float: right" class="col-md-12 btn btn-primary btn-lg btn-block" type="button">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
